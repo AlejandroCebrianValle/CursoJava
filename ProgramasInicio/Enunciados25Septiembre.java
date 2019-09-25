@@ -30,14 +30,14 @@ public class Enunciados25Septiembre {
 		//  Main //
 		Scanner in = new Scanner(System.in);
 		while (true){
-			System.out.println("\nMenú: Elija una opción para realizar el "
+			System.out.println("\nMenu: Elija una opcion para realizar el "
 								+  "Ejercicio:\n1.\tArea y longitud del" 
-								+ " círculo desde 15 a 180 u (de 15 en 15).\n"
+								+ " circulo desde 15 a 180 u (de 15 en 15).\n"
 								+ "2.\tTabla de multiplicar del 5.\n"
 								+ "3.\tTablas de multiplicar del 1 al 10.\n"
-								+ "4.\tEvaluador de triángulos.\n"
+								+ "4.\tEvaluador de triangulos.\n"
 								+ "5.\tCalculadora de factoriales.\n"
-								+ "6.\tSumatorio y Media de 10 número " 
+								+ "6.\tSumatorio y Media de 10 numero " 
 								+ "introducidos por teclado.\n"
 								+ "Introduzca 0 para salir.");
 			opcion = in.nextInt();
@@ -78,19 +78,19 @@ public class Enunciados25Septiembre {
 				System.out.println("Tercer lado: ");
 				c = in.nextDouble();
 				if (a == b && a == c && b == c) {
-					System.out.println("Su triángulo es Equilátero.");
+					System.out.println("Su triangulo es EquilÃ¡tero.");
 				}
 				else if (a == b || a == c || b == c) {
-					System.out.println("Su triángulo es Isósceles.");
+					System.out.println("Su triangulo es IsÃ³sceles.");
 				}
 				else {
-					System.out.println("Su triángulo es Escaleno.");
+					System.out.println("Su triangulo es Escaleno.");
 				}
 			}
 			else if (opcion == 5) {
 				System.out.println("----------------------------------------"
 						+ "\nEjercicio 5");
-				System.out.println("Ingrese el número a calcular su"
+				System.out.println("Ingrese el numero a calcular su"
 									+ " factorial:");
 				factor = in.nextInt();
 				
@@ -104,12 +104,12 @@ public class Enunciados25Septiembre {
 				System.out.println("----------------------------------------"
 						+ "\nEjercicio 6");
 				for (m=1; m<=10; m++) {
-					System.out.println("Introduzca el " + m +"º numero:");
+					System.out.println("Introduzca el " + m +"Âº numero:");
 					numero = in.nextDouble();
 					suma+=numero;
 					media+=(numero/10);
 				}
-				System.out.println("La media de los número introducidos es: "
+				System.out.println("La media de los numero introducidos es: "
 									+ media +"\nEl sumatorio es: " + suma);
 			}
 			else if (opcion == 0) {
@@ -118,7 +118,7 @@ public class Enunciados25Septiembre {
 				break;
 			}
 			else {
-				System.out.println("Introduce una opción correcta.");
+				System.out.println("Introduce una opcion correcta.");
 			}
 		} //while true END
 	}
