@@ -1,4 +1,4 @@
-import java.util.*;  
+import java.util.*;
 
 public class Enunciados25Septiembre {
 
@@ -31,13 +31,13 @@ public class Enunciados25Septiembre {
 		Scanner in = new Scanner(System.in);
 		while (true){
 			System.out.println("\nMenu: Elija una opcion para realizar el "
-								+  "Ejercicio:\n1.\tArea y longitud del" 
+								+  "Ejercicio:\n1.\tArea y longitud del"
 								+ " circulo desde 15 a 180 u (de 15 en 15).\n"
 								+ "2.\tTabla de multiplicar del 5.\n"
 								+ "3.\tTablas de multiplicar del 1 al 10.\n"
 								+ "4.\tEvaluador de triangulos.\n"
 								+ "5.\tCalculadora de factoriales.\n"
-								+ "6.\tSumatorio y Media de 10 numero " 
+								+ "6.\tSumatorio y Media de 10 numero "
 								+ "introducidos por teclado.\n"
 								+ "Introduzca 0 para salir.");
 			opcion = in.nextInt();
@@ -93,12 +93,13 @@ public class Enunciados25Septiembre {
 				System.out.println("Ingrese el numero a calcular su"
 									+ " factorial:");
 				factor = in.nextInt();
-				
-				for (i=1; i <= factor; i++) {
+
+				for (i=factor; i >= 1; i--) {
 					factorial = factorial*i;
 				}
 				System.out.println("El factorial de " + factor + " es "
 									+ factorial);
+				factorial = 1;
 			}
 			else if (opcion == 6) {
 				System.out.println("----------------------------------------"
