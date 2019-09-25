@@ -56,17 +56,17 @@ public class Enunciados25Septiembre {
 			System.out.println("Tercer lado: ");
 			c = in.nextDouble();
 			if (a == b && a == c && b == c) {
-				System.out.println("Su tri·ngulo es Equil·tero.");
+				System.out.println("Su tri√°ngulo es Equil√°tero.");
 			}
 			else if (a == b || a == c || b == c) {
-				System.out.println("Su tri·ngulo es IsÛsceles.");
+				System.out.println("Su tri√°ngulo es Is√≥sceles.");
 			}
 			else {
-				System.out.println("Su tri·ngulo es Escaleno.");
+				System.out.println("Su tri√°ngulo es Escaleno.");
 			}
 			System.out.println("--------------------------------------------"
 					+ "\nEjercicio 5");
-			System.out.println("Ingrese el n˙mero a calcular su factorial:");
+			System.out.println("Ingrese el n√∫mero a calcular su factorial:");
 			factor = in.nextInt();
 			
 			for (i=1; i <= factor; i++) {
@@ -77,14 +77,14 @@ public class Enunciados25Septiembre {
 			System.out.println("--------------------------------------------"
 					+ "\nEjercicio 6");
 			for (m=1; m<=10; m++) {
-				System.out.println("Introduzca el " + m +"∫ numero:");
+				System.out.println("Introduzca el " + m +"¬∫ numero:");
 				numero = in.nextDouble();
 				suma+=numero;
 				media+=(numero/10);
-				System.out.println("La media de los n˙mero introducidos es:"
+				System.out.println("La media de los n√∫mero introducidos es:"
 						+ media +"\nEl sumatorio es: " + suma);
 			}
-			System.out.println("La media de los n˙mero introducidos es: "
+			System.out.println("La media de los n√∫mero introducidos es: "
 								+ media +"\nEl sumatorio es: " + suma);
 			in.close();
 			break;
