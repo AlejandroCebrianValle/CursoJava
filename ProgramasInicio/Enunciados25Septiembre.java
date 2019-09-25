@@ -31,13 +31,13 @@ public class Enunciados25Septiembre {
 		Scanner in = new Scanner(System.in);
 		while (true){
 			System.out.println("\nMenú: Elija una opción para realizar el "
-								+  "Ejercicio:\n1.\t\tArea y longitud del" 
+								+  "Ejercicio:\n1.\tArea y longitud del" 
 								+ " círculo desde 15 a 180 u (de 15 en 15).\n"
-								+ "2.\t\tTabla de multiplicar del 5.\n"
-								+ "3.\t\tTablas de multiplicar del 1 al 10.\n"
-								+ "4.\t\tEvaluador de triángulos.\n"
-								+ "5.\t\tCalculadora de factoriales.\n"
-								+ "6.\t\tSumatorio y Media de 10 número " 
+								+ "2.\tTabla de multiplicar del 5.\n"
+								+ "3.\tTablas de multiplicar del 1 al 10.\n"
+								+ "4.\tEvaluador de triángulos.\n"
+								+ "5.\tCalculadora de factoriales.\n"
+								+ "6.\tSumatorio y Media de 10 número " 
 								+ "introducidos por teclado.\n"
 								+ "Introduzca 0 para salir.");
 			opcion = in.nextInt();
