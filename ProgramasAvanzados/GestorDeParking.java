@@ -14,7 +14,7 @@ public class GestorDeParking {
 		int libresPiso;			//plazas libres por piso
 		String garaje[][]; 		//el nombre lo dice todo...
 		String matricula;		//matricula del coche
-		// String matriculaL;		//Lista de matriculas introducidas
+		String matriculaL[];		//Lista de matriculas introducidas
 		String decidePl;		//manejador de menu de entrada de plaza
 		// Alias
 		Scanner in = new Scanner(System.in); // Alias de funcion escaner.
@@ -42,12 +42,14 @@ public class GestorDeParking {
 		}//while Introductor datos END
 		System.out.println("Su parking dispone de "
 							+ (piso*plPiso) + " plazas");
-		// Creacion del array
+		// Creacion del array y la lista de matriculas
 		garaje = new String[piso][plPiso];
+		matriculaL = new String[piso*plPiso];
 		// Rellenado
 		for (i = 0; i < garaje.length; i++) {
 			for (j = 0; j < garaje[i].length; j++) {
 				garaje[i][j] = "Libre";
+				matriculaL[j + (i * plPiso)] = "Libre"; 
 			}
 		}
 		// Imprimir
@@ -57,7 +59,7 @@ public class GestorDeParking {
 		// Bucle repetitivo para el funcionamiento
 		while (true) {
 			try {
-				System.out.print("Menu:\n"
+				System.out.print("\nMenu:\n"
 								+ "1.\tConsultar Plazas.\n"
 								+ "2.\tEntrada de coche.\n"
 								+ "3.\tSalida de coche.\n"
@@ -90,6 +92,7 @@ public class GestorDeParking {
 						System.out.print("Introduzca plaza del piso: ");
 						j = in.nextInt();
 						garaje[i][j] = matricula;
+						matriculaL[j + (i * plPiso)] = matricula;
 						System.out.print("Coche añadido...\n");
 					} //if-Decisor de plaza END
 					else if (decidePl.equals("N") || decidePl.equals("n")) {
@@ -99,6 +102,7 @@ public class GestorDeParking {
 								{
 									compr = true;
 									garaje[i][j] = matricula;
+									matriculaL[j + (i * plPiso)] = matricula;
 									System.out.print("Coche añadido en piso:  "
 													+ i + " pl: " + j + "\n");
 									break;
