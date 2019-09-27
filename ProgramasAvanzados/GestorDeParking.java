@@ -20,9 +20,9 @@ public class GestorDeParking {
 		System.out.println("Bienvenido al gestor de Parking."
 							+ "\n---------------------------------\n"
 							+ "Introduzca las dimensiones del parking");
-		System.out.print("Número de pisos: ");
+		System.out.print("NÃºmero de pisos: ");
 		piso = in.nextInt();
-		System.out.print("Número de plazas por piso: ");
+		System.out.print("NÃºmero de plazas por piso: ");
 		plPiso = in.nextInt();
 		System.out.println("Su parking dispone de "
 							+ (piso*plPiso) + " plazas");
@@ -41,7 +41,7 @@ public class GestorDeParking {
 		// Bucle repetitivo para el funcionamiento
 		while (true) {
 			try {
-				System.out.print("Menú:\n"
+				System.out.print("MenÃº:\n"
 									+ "1.\tConsultar Plazas.\n"
 									+ "2.\tEntrada de coche.\n"
 									+ "3.\tSalida de coche.\n"
