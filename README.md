@@ -1,5 +1,5 @@
 # CursoJava
-> @autor: Alejandro Cebrián del Valle
+> @autor: @AlejandroCebrianValle
 >
 > @fecha: 27/IX/2019
 >
