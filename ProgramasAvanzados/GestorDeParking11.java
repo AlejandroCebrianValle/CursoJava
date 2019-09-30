@@ -164,7 +164,7 @@ public class GestorDeParking11 {
                     break;
                 }               // switch multioption
             } catch (Exception exc) {
-				System.out.println("Introduzca un valor numerico correcot");
+				System.out.println("Introduzca un valor numerico correcto.");
 				in.nextLine();  // Catch not printable elements
 				continue;
             }   // TRY-catch Exception for not int Scanner option manager
